@@ -10,6 +10,8 @@ if(${CMAKE_VERSION} VERSION_GREATER_EQUAL "3.27")
     cmake_policy(SET CMP0144 NEW)
 endif()
 
+set(HUNTER_USE_CACHE_SERVERS NO)
+
 include(cmake/HunterGate.cmake)
 HunterGate(
     URL  https://github.com/qdrvm/hunter/archive/refs/tags/v0.25.3-qdrvm11.zip
